@@ -109,6 +109,7 @@ function updateScore(diff) {
 function gameOver() {
     playSound('death')
     clearInterval(gIntervalGhosts)
+    clearInterval(gCherryInterval)
     renderCell(gPacman.location, '<img src="img/grave.png">')
     gGame.isOn = false
 }
